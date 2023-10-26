@@ -1,16 +1,25 @@
 package studentAffairs;
 
+import java.util.ArrayList;
+
 public class Lesson {
 	private String name;
 	private String code;
 	private int n1,n2,ort;
-	public Lesson(String name, String code, int n1, int n2) {
-		
+	private ArrayList<Student> students = new ArrayList<Student>();
+	public Lesson(String name, String code) {		
+		this.name = name;
+		this.code = code;
+	}
+	public Lesson(String name, String code, int n1, int n2) {		
 		this.name = name;
 		this.code = code;
 		this.n1 = n1;
 		this.n2 = n2;
 		this.ort = (int)(n1*0.4+n2*0.6);
+	}
+	public void addStudent(Student s) {
+		students.add(s);		
 	}
 	public int getN1() {
 		return n1;
@@ -36,5 +45,14 @@ public class Lesson {
 		return ort;
 	}
 	
+	public void printStudents() {
+		System.out.println( name+ "dersini alan öðrencilerin listesi :.");
+		System.out.println( "-------------------------------------------------------------");
+		System.out.println( "Öðrenci No \tÖðrenci Adý");
+		System.out.println( "-------------------------------------------------------------");
+		for (Student student : students)
+			System.out.println( student.getNo() +"\t\t"+student.getName());
+		System.out.println( "-------------------------------------------------------------"+"\n");
+	}
 
 }
