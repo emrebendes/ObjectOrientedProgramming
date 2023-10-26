@@ -33,7 +33,7 @@ public class Student {
 		l.addStudent(this);
 		lessons.add(l);
 	}
-	public void addLesson(Lesson l, int n1, int n2) {
+	public void addLesson(Lesson l, int n1, int n2) {//metot overload olduðuna dikkat edin 
 		l.setN1(n1);
 		l.setN2(n2);
 		l.addStudent(this);

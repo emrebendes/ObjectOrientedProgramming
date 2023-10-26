@@ -11,7 +11,7 @@ public class Lesson {
 		this.name = name;
 		this.code = code;
 	}
-	public Lesson(String name, String code, int n1, int n2) {		
+	public Lesson(String name, String code, int n1, int n2) { //metot overload olduðuna dikkat edin 		
 		this.name = name;
 		this.code = code;
 		this.n1 = n1;
