@@ -1,0 +1,4 @@
+extends idafesi ile miras alma
+super() ile üst sınıf constructor metodunu çağırma
+this() ile sınıfın farklı constructor metodunu çağırma
+miras alan sınıflarda constructor çağırma önceliği

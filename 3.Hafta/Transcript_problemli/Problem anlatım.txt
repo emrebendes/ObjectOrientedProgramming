@@ -1,0 +1,3 @@
+-Not bilgileri Lesson sınfında bulunmakta. 
+-Bu hali ile bir dersi alan bütün öğrenciler aynı not bilgisine sahip olacaktır.
+-Not bilgileri öğrencide tanımlanması durumunda ise öğrenci aldığı bütün derslerden aynı notu almış olurdur.
