@@ -1,5 +1,0 @@
--Not bilgisi ayrı bir sınıf özelliği taşımakta.
--not bilgisini tutacak sınıfın derler ve öğrenciler ile ilişkisi belirlenmeli.
--student ve lesson sınıfında çok-çok ilişkisi bulunmaktadır. Bu ilişki ise not bilgisini tutan üçüncü bir sınıf (StudentLesson) ile kurulabilir.
--Student ve Lesson sınıfları StodentLesson sınıfının bir listesini tutmalı. yani her öğrencinin bir not listesi ve her dersin bir not listesi olmalı.
--Bu hali ile öğrencilerin herbir dersinin notları listelenebildiği gibi dersi alan her öğrencinin notları da listelenebilir.
