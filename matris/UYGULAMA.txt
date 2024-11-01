@@ -1,0 +1,16 @@
+1-Bir Matris Sınıfı Yazınız
+	x-matris elemanları private tanmlanmış 2 boyutlu bir dizide tutulsun.
+	x-Matris boyutu verilirse veriler o boyutda olşturulacak 2 boyutlu dizide tutulsun
+	x-Boyut verilmezse varsayılan 2X2 random değerli bir dizi oluşturulsun.	
+	x- matrisi ekrana yazdıran bir metot olsun. Bu metot her matris satırını ayrı satırlarda 
+	  ekrana yazdırabilsin. Aynı satırlardaki elemanlar arasında bir boşluk ya da tab karakteri olsun.
+	x-Sınıfın topla ve çarp metotları olsun. Metotlar parametre olarak başka bir matris 
+	  alsınlar ve sonucu matris olarak dödürsünler. (iki matris üzerinde işlem yapacak)
+	x-Sınıfın aynı isimli parametre olarak bir skaler alan versiyonunuda yazın
+	  ve sonucu matris olarak dödürsünler.(bir matris ve skaler üzerinde işlem yapacak)
+	x-transpozemetodu satırları sütun yapsın. Sonuç matris olarak dönderilsin.
+	
+2- main fonksiyonunda A=[1 2 3;4 5 6;7 8 9] ve B=[3 2 1;1 2 3;2 1 3] matrislerini oluşturun.
+	örn: Matris A = new Matris(new int [][]{{1,2,3},{4,5,6},{7,8,9}}); 
+   
+	AB+A+2 liner cebir ifadesini hesaplayınız.
