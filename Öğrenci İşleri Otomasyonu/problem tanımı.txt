@@ -1,0 +1,36 @@
+TANIM : Bir Öğrenci ders kayıt sistemi yazmanız istenmektedir. 
+
+Bir konsol menüsü tasarlayın ve kullanıcıya konsolda şu seçenekler sunulsun
+
+1. Ders Tanımla
+
+2. Öğrenci tanımla
+
+3. Öğrenciye ders ata
+
+4. Öğrenci dersine vize ve final notu gir.
+
+5. Öğrenci derslerini listele
+
+6. Dersi alan öğrencileri listele
+
+7. Çıkış
+
+ 
+AÇIKLAMALAR:
+1. seçeneği seçilirse yeni ders tanımı yapılacak. Bu işlem için ders ismini kullanıcının girmesi istenecek ve ders id si otomatik hesaplanacak. Bu hesaplamada static kullanmanız istenmektedir. ilk tanımlanan ders id si 1000 olacak ve sonrasında tanımlanan her ders son kulanılan id nin bir fazlası ile üretilecek
+
+2 seçenekte yeni öğrenci tanımlanacak. Bu işlemde kullanıcı sadece öğrenci ad ve soyadını girecek ve öğrenci no su 1. seçenekde ders idsinde olduğu gibi otomatik hesaplanacak. Burada ilk öğrenci no su 100 olacakve yine statik kullanılarak çözüm üretilecek
+
+3. seçeneği seçilince önce tanımlı öğrenciler listelenecek ve kullanıcının ders eklemek için öğrenci seçmesi istenecek. öğrenci seçildikten sonra tanımlı desler listelenecek ve kullanıcıdan bu derslerden birini seçmesi istenecek. 
+
+4. seçenekte önce öğrenci sonra o öğrencinin dersi seçtirilecek ve kullanıcıdan vize ve final notlarını girmesi istenecek. 
+
+5 seçenek de öğrencinin aldığı dersler ve bu derste aldığı notlar listelenecek
+
+6. secenekte seçilen dersi alan öğrenciler ve aldığı notlar listelenecek.
+
+7. seçenek seçildiğinde progradan çıkılacak. 
+
+ 
+
