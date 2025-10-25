@@ -1,0 +1,125 @@
+1- sayı tahmin oyunu:
+Amaç: Kullanıcıdan N değeri al, 1’den N’e kadar çift sayıları yazdır.
+Kazanım: while döngüsü, if, break.
+2- Sayı Tahmin Oyunu 
+Amaç: Bilgisayar rastgele sayı seçer, kullanıcı tahmin eder. Daha küçük/büyük ipucu verilir.
+Kazanım: Döngü içinde kontrol, boolean kullanımı, verimlilik için erken çıkış.
+3- ATM Simülasyonu
+Amaç: Kullanıcıya bakiye göster, para çekme, yatırma, çıkış seçenekleri sun.
+Kazanım: switch, döngü, koşullu işlemler.
+4- Sayıların Ortalamasını Bulma (Negatif Girince Bitir) 
+Amaç: Kullanıcı sayı girer, negatif sayı girene kadar ortalama hesaplanır.
+Kazanım: while(true), break, koşullu ortalama hesaplama.
+
+1. çözüm:
+import java.util.Random;
+import java.util.Scanner;
+public class SayiTahmin {
+    public static void main(String[] args) {
+        Random rand = new Random();
+        Scanner sc = new Scanner(System.in);
+        int hedef = rand.nextInt(100) + 1; // 1-100 arası sayı
+        int tahmin;
+        int hak = 7;
+        System.out.println("1 ile 100 arasında bir sayı tuttum. Tahmin et bakalım! (7 hakkın var)");
+        while (hak > 0) {
+            System.out.print("Tahmininiz: ");
+            tahmin = sc.nextInt();
+            hak--;
+            if (tahmin == hedef) {
+                System.out.println("Tebrikler! Doğru bildiniz 🎉");
+                break;
+            } else if (tahmin < hedef) {
+                System.out.println("Daha büyük bir sayı girin.");
+            } else {
+                System.out.println("Daha küçük bir sayı girin.");
+            }
+            if (hak == 0) {
+                System.out.println("Hakkınız bitti. Doğru cevap: " + hedef);
+            }
+        }
+    }
+}
+
+2. çözüm :
+import java.util.Scanner;
+public class CiftSayilar {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Bir sayı girin: ");
+        int n = sc.nextInt();
+        System.out.println("1'den " + n + "'e kadar çift sayılar:");
+        for (int i = 2; i <= n; i += 2) {
+            System.out.print(i + " ");
+        }
+    }
+}
+
+3.çözüm:
+import java.util.Scanner;
+public class ATM {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        double bakiye = 1000; 
+        while (true) {
+            System.out.println("\n--- ATM MENÜ ---");
+            System.out.println("1- Bakiye Görüntüle");
+            System.out.println("2- Para Yatır");
+            System.out.println("3- Para Çek");
+            System.out.println("4- Çıkış");
+            System.out.print("Seçiminiz: ");
+            int secim = sc.nextInt();
+            switch (secim) {
+                case 1:
+                    System.out.println("Bakiyeniz: " + bakiye + " TL");
+                    break;
+                case 2:
+                    System.out.print("Yatırılacak miktar: ");
+                    double yatir = sc.nextDouble();
+                    bakiye += yatir;
+                    System.out.println("Yeni bakiyeniz: " + bakiye + " TL");
+                    break;
+                case 3:
+                    System.out.print("Çekilecek miktar: ");
+                    double cek = sc.nextDouble();
+                    if (cek <= bakiye) {
+                        bakiye -= cek;
+                        System.out.println("Yeni bakiyeniz: " + bakiye + " TL");
+                    } else {
+                        System.out.println("Yetersiz bakiye!");
+                    }
+                    break;
+                case 4:
+                    System.out.println("Çıkış yapılıyor...");
+                    return; // programı bitir
+                default:
+                    System.out.println("Geçersiz seçim!");
+            }
+        }
+    }
+}
+
+4. çözüm:
+import java.util.Scanner;
+public class OrtalamaBulma {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int toplam = 0, adet = 0;
+        while (true) {
+            System.out.print("Bir sayı girin (çıkmak için negatif girin): ");
+            int sayi = sc.nextInt();
+
+            if (sayi < 0) break;
+
+            toplam += sayi;
+            adet++;
+        }
+        if (adet > 0) {
+            double ortalama = (double) toplam / adet;
+            System.out.println("Girilen sayıların ortalaması: " + ortalama);
+        } else {
+            System.out.println("Hiç pozitif sayı girilmedi.");
+        }
+    }
+}
+
