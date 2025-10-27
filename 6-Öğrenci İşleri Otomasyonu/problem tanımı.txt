@@ -22,9 +22,9 @@ AÇIKLAMALAR:
 
 2 seçenekte yeni öğrenci tanımlanacak. Bu işlemde kullanıcı sadece öğrenci ad ve soyadını girecek ve öğrenci no su 1. seçenekde ders idsinde olduğu gibi otomatik hesaplanacak. Burada ilk öğrenci no su 100 olacakve yine statik kullanılarak çözüm üretilecek
 
-3. seçeneği seçilince önce tanımlı öğrenciler listelenecek ve kullanıcının ders eklemek için öğrenci seçmesi istenecek. öğrenci seçildikten sonra tanımlı desler listelenecek ve kullanıcıdan bu derslerden birini seçmesi istenecek. 
+3. seçeneği seçilince önce tanımlı öğrenciler listelenecek ve kullanıcının ders eklemek için öğrenci seçmesi istenecek. öğrenci seçildikten sonra tanımlı desler listelenecek ve kullanıcıdan bu derslerden birini seçmesi istenecek. Hiç ders yoksa Önce ders tanımı yapın uyarısı yapacak. 
 
-4. seçenekte önce öğrenci sonra o öğrencinin dersi seçtirilecek ve kullanıcıdan vize ve final notlarını girmesi istenecek. 
+4. seçenekte önce öğrenci sonra o öğrencinin dersi seçtirilecek ve kullanıcıdan vize ve final notlarını girmesi istenecek. Eğer öğrenci yok ise "Önce öğrenci tanımlayınız.", öğrenci var ama hiç dersi yoksa "Öğrenciye ders ataması yapmalısınız." uyarısı vermeli
 
 5 seçenek de öğrencinin aldığı dersler ve bu derste aldığı notlar listelenecek
 
