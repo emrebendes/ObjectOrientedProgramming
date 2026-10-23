@@ -1,0 +1,15 @@
+1. 	oop01
+	java anlatımı
+	jdk jvm jre kavramları
+	merhaba dünya örneği notpad ile
+---------------------------
+path tanımlı değilse java ve javac kodunu tanımayacaktir.
+package yok iken
+javac HelloWorldApp.java
+java HelloWorldApp
+package var iken (bir üst klasöre çıkmak lazım) javac da \ java da / işareti kullanılıyor. 
+javac uygulama\HelloWorldApp.java
+java uygulama/HelloWorldApp
+eğer sınıf public tanımlanır ise dosya ile aynı isimde olmalı public değilse farklı isim olabilr.
+----------------------------
+	eclipse ve Jdeveloper tanıtımı

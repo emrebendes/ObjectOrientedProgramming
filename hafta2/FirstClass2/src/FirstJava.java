@@ -1,0 +1,22 @@
+
+public class FirstJava {
+	public static void main(String[] args) {
+		int i = 30;//[-2^31+1 2^31]   4 byte 
+		byte b = 127;
+		byte b2 = 0x5A ;//0b010101 ;
+		
+		byte b3 = (byte)1000;		
+		short s = 1000 ;
+		long l = 98237492389l;
+		
+		float f =3.2f;
+		double d = 3.2;
+		
+		
+		System.out.println("i="+i);
+		System.out.println("b="+b+" b2="+b2);
+		System.out.println(b3);
+		System.out.println("s="+s);
+		System.out.println("f="+f+" d="+d);
+	}
+}

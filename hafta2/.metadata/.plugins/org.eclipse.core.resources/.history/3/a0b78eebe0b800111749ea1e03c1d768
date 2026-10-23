@@ -1,0 +1,12 @@
+
+public class FirstJava {
+	public static void main(String[] args) {
+		int i = 30;//4 byte 
+		byte b = 127;
+		byte b2 = 0x2A ;//0b010101 ;
+		
+		
+		System.out.println("i="+i);
+		System.out.println("b="+b+" b2 ="+b2);
+	}
+}

@@ -1,0 +1,19 @@
+
+public class FirstJava {
+	public static void main(String[] args) {
+		
+		int i =30;//[-2^31+1 2^31]
+		byte b = 0x5A;//0b010101;//-128;//[-128 127]
+		short s = 128;
+		long l = 16516165165161L;
+		
+		byte bb = (byte)128;
+		
+		
+		
+		
+		System.out.println("i="+i);
+		System.out.println("b="+b+" s="+s);
+		System.out.println("bb="+bb);
+	}
+}
