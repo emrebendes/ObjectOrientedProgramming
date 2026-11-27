@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class Student {
     private String name, surname;
-    private ArrayList<Lesson> lessons = new ArrayList<>();
+    private ArrayList<Grades> grades = new ArrayList<>();
 
     public Student(String n, String s) {
         this.name = n;
@@ -10,20 +10,38 @@ public class Student {
 
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+
     public void addLesson(Lesson l) {
-        lessons.add(l);
+        Grades g = new Grades(this, l);
+        grades.add(g);
+        l.addGrades(g);
+    }
+
+    public void setLessonVize(int id, int note) {
+        grades.get(id).setV(note);
+    }
+
+    public void setLessonFinal(int id, int note) {
+        grades.get(id).setF(note);
     }
 
     public Lesson getLesson(int id) {
-        return lessons.get(id);
+        return grades.get(id).getLesson();
     }
 
     public void printStudent() {
         System.out.println();
         System.out.println(name + " " + surname + "===================");
-        for (Lesson lesson : lessons) {
-            System.out.print(lesson.getName());
-            System.out.println("\t" + lesson.getV() + "\t" + lesson.getF());
+        for (Grades grade : grades) {
+            System.out.print(grade.getLesson().getName());
+            System.out.println("\t" + grade.getV() + "\t" + grade.getF());
         }
     }
 
